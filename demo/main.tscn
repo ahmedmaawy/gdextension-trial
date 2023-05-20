@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://ce8kp8wm2wvgl"]
+
+[ext_resource type="Script" path="res://main.gd" id="1_1yiia"]
+[ext_resource type="Texture2D" uid="uid://cew1gpwfw8176" path="res://icon.svg" id="1_wn3du"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_1yiia")
+
+[node name="GDExample" type="GDExample" parent="."]
+sample_value = 15
+position = Vector2(19.6192, 19.8293)
+texture = ExtResource("1_wn3du")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.1
+one_shot = true
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
