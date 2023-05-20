@@ -6,7 +6,7 @@ Reference: [GDExtension C++ example](https://docs.godotengine.org/en/stable/tuto
 
 Checking to see if the node is running in the editor:
 
-```gdscript
+```cpp
 // Include this file:
 #include <godot_cpp/classes/engine.hpp>
 
